@@ -35,9 +35,6 @@ Projeto desenvolvido com Spring Boot.
 
 ## 📌 Endpoints
 
-### ➤ Criar venda
-POST `/api/vendas`
-
 ### ➤ Criar vendas em lote
 POST `/api/vendas/lote`
 
@@ -65,9 +62,17 @@ O resumo agrupa as vendas por vendedor e calcula:
 ## 📊 Exemplo de requisição
 
 ```json
-{
-  "dataVenda": "2026-03-25",
-  "valor": 100.0,
-  "vendedorId": 1,
-  "vendedorNome": "Maria"
-}
+[
+  {
+    "dataVenda": "2026-03-25",
+    "valor": 100.0,
+    "vendedorId": 1,
+    "vendedorNome": "Miguel"
+  },
+  {
+    "dataVenda": "2026-03-26",
+    "valor": 200.0,
+    "vendedorId": 2,
+    "vendedorNome": "Felipe"
+  }
+]
